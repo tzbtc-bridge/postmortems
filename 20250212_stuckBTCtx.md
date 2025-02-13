@@ -32,6 +32,8 @@ Even though the system tried to broadcast the signed Bitcoin transaction, none o
 
 tzBTC Bridge contributors were able to get the stuck Bitcoin transactions mined with the help of the AntPool acceleration service / mining pool. All consequent transactions succeeded. A fix was deployed to do a proper estimation and avoid being below the `minrelaytxfee`.
 
+An alternative resolution would have been possible: Keyholders could manually sign new transactions to overwrite the stuck ones, but that would have taken more time to prepare and execute.
+
 ### Action Items:
 - stuck transactions were accelerated and were finalized, users got paid
 - fix was appllied to avoid the same issue
@@ -68,7 +70,7 @@ What was the exact timeline of the relevant events/actions?
 ## Lessons Learned
 
 ### What went well
-tzBTC contributors worked well together to investigate the root cause. No exploits or misuse potential was open at any time. Other users could still use the bridge without being affected (as their fee estimation was fine).
+tzBTC contributors worked well together to investigate the root cause. No exploits or misuse potential was open at any time. Other users could still use the bridge without being affected (as their fee estimation was fine). An alternative resolution would have been possible: Keyholders could manually sign new transactions to overwrite the stuck ones, but that would have taken more time to prepare and execute.
 
 ### What went wrong
 The real reason for the transactions failing took a lot of time to be discovered. 
