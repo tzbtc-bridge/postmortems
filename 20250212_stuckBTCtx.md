@@ -68,12 +68,13 @@ What was the exact timeline of the relevant events/actions?
 ## Lessons Learned
 
 ### What went well
-
+tzBTC contributors worked well together to investigate the root cause. No exploits or misuse potential was open at any time. Other users could still use the bridge without being affected (as their fee estimation was fine).
 
 ### What went wrong
-
+The real reason for the transactions failing took a lot of time to be discovered. 
 
 ### Where we got lucky
-
+Contributors were able to broadcast the BTC transaction so AntPool was able to mine it, even though most BTC nodes would have rejected it. AntPool included them in the next possible block. System did finalize the transactions immediately.
 
 ### Conclusion
+Monitoring and error handling should be be improved, so devops can faster find the root cause.
